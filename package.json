@@ -1,0 +1,26 @@
+{
+  "name": "ine-price-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Product Price Tracker for INE Mock Store",
+  "scripts": {
+    "start": "npm --prefix backend start",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "scraper:diagnose": "npm --prefix backend run scraper:diagnose",
+    "scrape:headed": "npm --prefix backend run scrape:headed",
+    "test": "npm --prefix backend test",
+    "build": "npm --prefix frontend run build"
+  },
+  "keywords": [
+    "price-tracker",
+    "scraper",
+    "playwright",
+    "full-stack",
+    "supabase",
+    "express",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC"
+}
