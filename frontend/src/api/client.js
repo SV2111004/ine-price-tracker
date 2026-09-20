@@ -75,9 +75,10 @@ export const api = {
   },
 
   triggerBatchScrape(secret) {
+    const token = secret || import.meta.env.VITE_CRON_SECRET || '';
     return request('/scrape/all', {
       method: 'POST',
-      headers: secret ? { Authorization: `Bearer ${secret}` } : {},
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
     });
   }
 };
